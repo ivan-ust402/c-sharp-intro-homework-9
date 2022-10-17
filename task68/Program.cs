@@ -16,8 +16,11 @@ if (m < 0 || n < 0)
 }
 else 
 {
+    int result = GetAkkerman(m, n);
+    Console.WriteLine(result);
+
     int GetAkkerman(int m, int n) {
-        if (m = 0) 
+        if (m == 0) 
         {
             return n + 1;
         }
