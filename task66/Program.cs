@@ -17,8 +17,17 @@ if (N <= 0 || M <= 0)
 }
 else 
 {   
+    if(M > N) {
+        int temp = M;
+        M = N;
+        N = temp;
+    }
+
+    int result = GetSum(M, N);
+    Console.WriteLine(result);
+
     int GetSum(int M, int N, int sum = 0) {
-        if (M == N) {
+        if (M == N + 1) {
             return sum;
         }
         else {
